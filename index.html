@@ -1,86 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-   img {
-     margin-top: 25px;
-     margin-botom:15px;
-  }
-  #searchbar {
-    width: 550px;
-    height: 40px;
-    border-radius: 20px;
-    border-width: .5px;
-    border-color: rgba(33,33,33,.2);
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  button {
-    background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
-    border-radius: 4px;
-    color: #3c4043;
-    font-family: arial,sans-serif;
-    font-size: 14px;
-    margin: 11px 4px;
-    padding: 0 16px;
-    line-height: 27px;
-    height: 36px;
-    min-width: 54px;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
-  }
-  .button-div{
-    display: flex;
-    justify-content: center;
-  }
-  button:hover{
-     box-shadow: 0 0 3px;
-     rgba(33,33,33,.2);
-  }
-  p {
-    font-family: arial,sans-serif;
-    text-align: center;
-    font-size: 14px;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow:hidden;
-    background: #FFFFFF;
-  }
-  li {
-    font-size: 14px;
-    font-family: arial, sans-serif;
-  }
-  a {
-    color:black;
-    text-decoration: none;
-  }
-  .list-left{
-    float:left;
-    padding: 15px;
-  }
-  .list-right{
-    float:right;
-    padding: 15px;
-  }
-  footer{
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-  }
-  </style>
-</head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Google</title>
+</head>
 <header>
   <ul>
     <li class="list-left"><a href="https://about.google/" alt="Google About">About</a></li>
@@ -89,25 +14,26 @@
     <li class="list-right"><a href="https://mail.google.com/" alt="Gmail">Gmail</a></li>
 </header>
 <body>
-  <div>
+  <div class="center">
     <a href="https://www.google.com/"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-alt="Google Logo" class="center"></a>
+alt="Google Logo"></a>
 </div>
-<div>
-  <input type="text" id="searchbar" class="center" placeholder="" name="search">
+<div class="center">
+  <input type="text" id="searchbar" placeholder="" name="search" results="0">
 </div>
-<div class="button-div" "center">
+<div class="center">
   <button type="submit" name="Google Search">Google Search</button>
   <button type="submit" name="I'm Feeling Lucky">I'm Feeling Lucky</button>
 </div>
 </body>
-<footer class="footer-div">
-  <ul>
+<footer>
+  <ul id="footer-color">
     <li class="list-left"><a href="https://ads.google.com/" alt="Google Ads">Advertising</a></li>
     <li class="list-left"><a href="https://smallbusiness.withgoogle.com/" alt="Google Business">Business</a></li>
     <li class="list-left"><a href="https://www.google.com/search/howsearchworks/?fg=1" alt="How Search Works">How Search Works</a></li>
     <li class="list-right"><a href="" alt="Settings">Settings</a></li>
     <li class="list-right"><a href="" alt="Terms">Terms</a></li>
     <li class="list-right"><a href="" alt="Privacy">Privacy</a></li>
+  </ul>
 </footer>
 </html>
