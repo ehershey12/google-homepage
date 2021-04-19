@@ -2,8 +2,11 @@
   display: flex;
   justify-content: center;
 }
- img {
-   margin-top: 50px;
+.navbarimg {
+  margin-top: 3px;
+}
+.googlelogo {
+  margin-top:100px;
 }
 #searchbar {
   width: 550px;
@@ -13,11 +16,12 @@
   border-color: rgba(33,33,33,.2);
   margin-top: 15px;
   margin-bottom: 15px;
+  text-indent: 25px;
 }
 input:hover{
   box-shadow: 0 0 1px;
 }
-button {
+.search-button {
   background-color: #f8f9fa;
   border: 1px solid #f8f9fa;
   border-radius: 4px;
@@ -25,6 +29,20 @@ button {
   font-family: arial,sans-serif;
   font-size: 14px;
   margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+}
+.sign-in {
+  background-color: #1a73e8;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: white;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  margin: -8px 4px;
   padding: 0 16px;
   line-height: 27px;
   height: 36px;
@@ -55,12 +73,14 @@ a {
 }
 .list-left{
   float:left;
+  justify-content: space-between;
 }
 .list-right{
   float:right;
+  justify-content: space-between;
 }
 footer{
-  position:absolute;
+  position:fixed;
   left:0;
   right:0;
   bottom:0;
